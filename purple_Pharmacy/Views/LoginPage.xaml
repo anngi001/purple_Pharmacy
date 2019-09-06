@@ -76,6 +76,7 @@
                         HorizontalOptions="FillAndExpand"
                         IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
                         Text="Login"
+                        x:Name="btLogin"
                         FontSize="Subtitle"
                         TextColor="White">
                         </Button>

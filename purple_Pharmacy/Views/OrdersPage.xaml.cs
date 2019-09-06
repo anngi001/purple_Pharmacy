@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace purple_Pharmacy.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class DomicilesPage : MasterDetailPage
+    public partial class OrdersPage : ContentPage
     {
-        public DomicilesPage()
+        public OrdersPage()
         {
             InitializeComponent();
         }
