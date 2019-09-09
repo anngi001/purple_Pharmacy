@@ -14,7 +14,7 @@
                 x:Name="ListMenu">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <TextCell Text="{Binding MenuItem}" Detail="{Binding MenuDetail}"></TextCell>
+                        <TextCell Text="{Binding MenuTitle}" Detail="{Binding MenuDetail}"></TextCell>
                     </DataTemplate>                    
                 </ListView.ItemTemplate>                
             </ListView>
@@ -22,5 +22,6 @@
         </ContentPage>
 
     </MasterDetailPage.Master>
+    
     
 </MasterDetailPage>

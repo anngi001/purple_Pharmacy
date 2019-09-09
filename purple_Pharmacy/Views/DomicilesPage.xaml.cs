@@ -15,6 +15,32 @@ namespace purple_Pharmacy.Views
         public DomicilesPage()
         {
             InitializeComponent();
+            Init();
+        }
+
+        void Init()
+        {
+            List<Menu> menu = new List<Menu>
+            {
+                new Menu {Title = "Inicio", Detail = "Regresa a la pagina principal" },
+                new Menu {Title = "Opciones", Detail = "Navegar a la pagina principal" },
+            };
+            ListMenu.ItemsSource = menu;
+            
+            Detail = new NavigationPage(new OrdersPage());
+        }
+    }
+    public class Menu
+    {
+        public string Title
+        {
+            get;
+            set;
+        }
+        public object Detail
+        {
+            get;
+            set;
         }
     }
 }

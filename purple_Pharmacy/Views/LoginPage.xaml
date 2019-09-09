@@ -9,6 +9,11 @@
         <StackLayout>
             <ScrollView   BindingContext="{Binding Login}"  >
                 <StackLayout Padding="5">
+                    <ActivityIndicator
+                    IsRunning="{Binding IsRunning, Mode=TwoWay}"
+                    VerticalOptions="EndAndExpand">
+                    </ActivityIndicator>
+                    
                     <Image Source="LoginMain.png" WidthRequest="200"></Image>
                     <Label Text="FARMACIA PURPURA" FontSize="Title" HorizontalOptions="Center"></Label>
                     
@@ -20,7 +25,7 @@
                         <Label  Grid.Row="0" 
                                 Grid.Column="0" 
                                 Text="Usuario"  
-                                FontSize="Large"
+                                FontSize="Medium"
                                 VerticalOptions="Center">
                         </Label>
                         <Entry  Grid.Row="0"
@@ -32,7 +37,7 @@
                         Grid.Row="1"
                         Grid.Column="0"
                         Text="Contraseña"
-                        FontSize="Large"
+                        FontSize="Medium"
                         VerticalOptions="Center">
                         </Label>
                         <Entry
@@ -43,10 +48,7 @@
                         </Entry>
                     </Grid>
                     
-                    <ActivityIndicator
-                    IsRunning="{Binding IsRunning, Mode=TwoWay}"
-                    VerticalOptions="CenterAndExpand">
-                    </ActivityIndicator>
+                    
                     
                     <StackLayout
                     Margin="10,0"
@@ -63,6 +65,11 @@
                         HorizontalOptions="End">
                         </Switch>
                     </StackLayout>
+                    
+                    <ActivityIndicator
+                    IsRunning="{Binding IsRunning, Mode=TwoWay}"
+                    VerticalOptions="EndAndExpand">
+                    </ActivityIndicator>
 
                     <StackLayout
                     Margin="40,0"
@@ -81,23 +88,7 @@
                         TextColor="White">
                         </Button>
                     </StackLayout>
-                    
-                    <StackLayout
-                    Margin="40,0"
-                    Orientation="Horizontal"
-                    VerticalOptions="CenterAndExpand">
-                        <Button
-                        BackgroundColor="Purple"
-                        BorderRadius="23"
-                        HeightRequest="46"
-                        HorizontalOptions="FillAndExpand"
-                        IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
-                        Text="Register"
-                          
-                        TextColor="White">
-                        </Button>
-                    </StackLayout>
-
+                                       
                     <StackLayout
                     HorizontalOptions="Center"
                     Orientation="Horizontal"
@@ -107,7 +98,7 @@
                                 <TapGestureRecognizer Command="{Binding LoginFacebookComand}"/>
                             </Image.GestureRecognizers>
                         </Image>
-                        <Image Source="instagram.png"   WidthRequest="80">
+                        <Image Source="instagram.png"   WidthRequest="80" >
                         </Image>
                         <Image Source="twitter.png"   WidthRequest="80">
                         </Image>                        
