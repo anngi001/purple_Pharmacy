@@ -22,9 +22,15 @@
     <Compile Update="Models\Master.xaml.cs">
       <DependentUpon>Master.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Views\DomicilioPage.xaml.cs">
+      <DependentUpon>DomicilioPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Views\DetailMedicametos.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\DomicilioPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
