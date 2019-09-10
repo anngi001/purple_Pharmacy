@@ -23,7 +23,7 @@ namespace purple_Pharmacy.Views
                 new Menu {MenuTitle = "Mis Pedidos", MenuDetail = "Navegar a la pagina principal" },
             };
             ListMenu.ItemsSource = menu;
-            Detail = new NavigationPage(new OrdersPage());
+            
         }
         private void ListMenu_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
@@ -32,7 +32,7 @@ namespace purple_Pharmacy.Views
             {
                 if(menu.MenuTitle.Equals("Domicilio"))
                 {
-                    Detail = new NavigationPage(new Medicamentos()) ;
+                    Detail = new NavigationPage(new DomicilesPage()) ;
                 }
                 else if (menu.MenuTitle.Equals("Mis Pedidos"))
                 {
