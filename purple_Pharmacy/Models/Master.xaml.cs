@@ -32,7 +32,7 @@ namespace purple_Pharmacy.Views
             {
                 if(menu.MenuTitle.Equals("Domicilio"))
                 {
-                    Detail = new NavigationPage(new DomicilesPage()) ;
+                    Detail = new NavigationPage(new Medicamentos()) ;
                 }
                 else if (menu.MenuTitle.Equals("Mis Pedidos"))
                 {
