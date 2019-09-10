@@ -6,7 +6,7 @@
              mc:Ignorable="d"
              Title="Domicilios"
              x:Class="purple_Pharmacy.Views.DomicilesPage">
-
+    
     <MasterDetailPage.Master>
         <ContentPage
             Title="Tienda">
@@ -15,13 +15,13 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <TextCell Text="{Binding MenuTitle}" Detail="{Binding MenuDetail}"></TextCell>
-                    </DataTemplate>                    
-                </ListView.ItemTemplate>                
+                    </DataTemplate>
+                </ListView.ItemTemplate>
             </ListView>
 
         </ContentPage>
 
     </MasterDetailPage.Master>
-    
-    
+
+
 </MasterDetailPage>

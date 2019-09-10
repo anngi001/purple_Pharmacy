@@ -7,6 +7,8 @@ namespace purple_Pharmacy
 {
     public partial class App : Application
     {
+        public static MasterDetailPage MasterD { get; set; }
+
         public App()
         {
             InitializeComponent();
