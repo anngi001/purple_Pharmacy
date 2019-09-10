@@ -11,7 +11,7 @@
         <ContentPage
             Title="Tienda">
             <ListView 
-                x:Name="ListMenu">
+                x:Name="ListMenu" ItemSelected="ListMenu_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <TextCell Text="{Binding MenuTitle}" Detail="{Binding MenuDetail}"></TextCell>

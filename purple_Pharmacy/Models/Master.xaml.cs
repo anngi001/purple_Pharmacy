@@ -19,8 +19,8 @@ namespace purple_Pharmacy.Views
             
             List<Menu> menu = new List <Menu>
             {
-                new Menu {MenuTitle = "Domicilio", MenuDetail = "Regresa a la pagina principal" },
-                new Menu {MenuTitle = "Mis PEdidos", MenuDetail = "Navegar a la pagina principal" },
+                new Menu { MenuTitle = "Domicilio", MenuDetail = "Regresa a la pagina principal" },
+                new Menu {MenuTitle = "Mis Pedidos", MenuDetail = "Navegar a la pagina principal" },
             };
             ListMenu.ItemsSource = menu;
             Detail = new NavigationPage(new OrdersPage());
@@ -30,8 +30,16 @@ namespace purple_Pharmacy.Views
             var menu = e.SelectedItem as Menu;
             if(menu!= null)
             {
-                IsPresented = false;
-                Detail = new NavigationPage(menu.Page);
+                if(menu.MenuTitle.Equals("Domicilio"))
+                {
+                    Detail = new NavigationPage(new DomicilesPage()) ;
+                }
+                else if (menu.MenuTitle.Equals("Mis Pedidos"))
+                {
+                    Detail = new NavigationPage(new OrdersPage());
+                }
+                
+               
             }
         }
     }
@@ -49,6 +57,6 @@ namespace purple_Pharmacy.Views
             get;
             set;
         }
-        public Page Page { get; internal set; }
+        
     }
 }

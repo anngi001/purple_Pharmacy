@@ -15,18 +15,20 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
     <Folder Include="ViewsModel\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Views\Master.xaml.cs">
+    <Compile Update="Models\Master.xaml.cs">
       <DependentUpon>Master.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Views\Master.xaml">
+    <EmbeddedResource Update="Views\DomicilioPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\Master.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\LoginPage.xaml">
