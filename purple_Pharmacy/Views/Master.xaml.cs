@@ -19,8 +19,8 @@ namespace purple_Pharmacy.Views
             
             List<Menu> menu = new List <Menu>
             {
-                new Menu {MenuTitle = "Inicio", MenuDetail = "Regresa a la pagina principal" },
-                new Menu {MenuTitle = "Opciones", MenuDetail = "Navegar a la pagina principal" },
+                new Menu {MenuTitle = "Domicilio", MenuDetail = "Regresa a la pagina principal" },
+                new Menu {MenuTitle = "Mis PEdidos", MenuDetail = "Navegar a la pagina principal" },
             };
             ListMenu.ItemsSource = menu;
             Detail = new NavigationPage(new OrdersPage());
