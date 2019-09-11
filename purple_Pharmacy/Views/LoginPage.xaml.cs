@@ -12,7 +12,7 @@ namespace purple_Pharmacy.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LoginPage : ContentPage
     {
-        
+
 
         public LoginPage()
         {
@@ -20,9 +20,34 @@ namespace purple_Pharmacy.Views
             btLogin.Clicked += BtLogin_Clicked;
         }
 
-        private void BtLogin_Clicked(object sender, EventArgs e)
+        private async void BtLogin_Clicked(object sender, EventArgs e)
         {
-            ((NavigationPage)this.Parent).PushAsync(new DomicilesPage());
+            if (String.IsNullOrEmpty(txtUsuario.Text))
+            {
+
+                await DisplayAlert("Validacion", "Por favor digite un usuario", "ok");
+                txtUsuario.Focus();
+                return;
+
+
+            }
+
+            if (String.IsNullOrEmpty(txtPassword.Text))
+            {
+
+                await DisplayAlert("Validacion", "Por favor digite una contraseña ", "ok");
+                txtPassword.Focus();
+                return;
+
+
+            }
+            await ((NavigationPage)this.Parent).PushAsync(new DomicilesPage());
+
+
         }
+
+
+        
+
     }
 }
