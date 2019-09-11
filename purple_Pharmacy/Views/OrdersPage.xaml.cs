@@ -18,7 +18,7 @@ namespace purple_Pharmacy.Views
         public OrdersPage()
         {
             InitializeComponent();
-            Init();
+            
         }
       
     }
