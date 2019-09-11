@@ -15,6 +15,7 @@ namespace purple_Pharmacy.Views
     {
         public Medicamentos()
         {
+
             InitializeComponent();
             LoadContacts();
         }

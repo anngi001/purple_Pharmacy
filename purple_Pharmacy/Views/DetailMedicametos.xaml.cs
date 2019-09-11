@@ -23,5 +23,6 @@ namespace purple_Pharmacy.Views
         {
             Datos.BindingContext = contact;
         }
+
     }
 }
