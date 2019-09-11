@@ -9,10 +9,7 @@
         <StackLayout>
             <ScrollView   BindingContext="{Binding Login}"  >
                 <StackLayout Padding="5">
-                    <ActivityIndicator
-                    IsRunning="{Binding IsRunning, Mode=TwoWay}"
-                    VerticalOptions="EndAndExpand">
-                    </ActivityIndicator>
+                    
                     
                     <Image Source="LoginMain.png" WidthRequest="200"></Image>
                     <Label Text="FARMACIA PURPURA" FontSize="Title" HorizontalOptions="Center"></Label>

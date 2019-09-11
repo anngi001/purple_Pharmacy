@@ -26,7 +26,7 @@ namespace purple_Pharmacy.Views
                 new Menu {MenuTitle = "Domicilio" },
             };
             ListMenu.ItemsSource = menu;
-            Detail = new NavigationPage(new OrdersPage());
+            Detail = new NavigationPage(new Welcome());
         }
         private void ListMenu_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {

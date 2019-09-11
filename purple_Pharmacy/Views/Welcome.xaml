@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="purple_Pharmacy.Views.Welcome">
+    <ContentPage.Content>
+        <StackLayout Padding="5">
+            <ActivityIndicator
+                    IsRunning="{Binding IsRunning, Mode=TwoWay}"
+                    VerticalOptions="Center">
+            </ActivityIndicator>
+            <Image Source="avatar.png" WidthRequest="200"></Image>
+                <Label Text="Bienvenido" FontSize="Title" HorizontalOptions="Center" TextColor="Navy"  HeightRequest="80" ></Label>
+            </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
