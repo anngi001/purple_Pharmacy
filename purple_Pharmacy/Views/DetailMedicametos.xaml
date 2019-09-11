@@ -5,11 +5,72 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="purple_Pharmacy.Views.DetailMedicametos">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+
+
+
+    <StackLayout Orientation="Vertical" Margin="10" Spacing="10" x:Name="Datos">
+        <Image Source="{Binding ImageUrl}" WidthRequest="250"/>
+        <Label Text="{Binding FullName}" 
+               HorizontalOptions="Center"
+               FontAttributes="Bold"
+               FontSize="Large"/>
+
+        
+
+
+        <StackLayout Orientation="Horizontal" BackgroundColor="Red" HorizontalOptions="FillAndExpand">
+
+            <Label Text="NombreCientifico" 
+               HorizontalOptions="StartAndExpand"
+               FontAttributes="Bold"
+               FontSize="Large"/>
+
+
+            <Label Text="{Binding NombreCientifico}" 
+               VerticalOptions="Center"
+               FontAttributes="Bold"
+               FontSize="Large"/>
+
         </StackLayout>
-    </ContentPage.Content>
+
+        <StackLayout Orientation="Horizontal" BackgroundColor="Red" HorizontalOptions="FillAndExpand">
+
+
+            <Label Text="Codigo" 
+            HorizontalOptions="StartAndExpand"
+               FontAttributes="Bold"
+               FontSize="Large"/>
+
+
+            <Label Text="{Binding Codigo}" 
+               VerticalOptions="Center"
+               FontAttributes="Bold"
+               FontSize="Large"/>
+
+        </StackLayout>
+
+
+        <StackLayout Orientation="Horizontal" BackgroundColor="Red" HorizontalOptions="FillAndExpand">
+
+            <Label Text="Precio" 
+               HorizontalOptions="StartAndExpand"
+               FontAttributes="Bold"
+               FontSize="Large"/>
+
+
+            <Label Text="{Binding Precio}" 
+               VerticalOptions="Center"
+               FontAttributes="Bold"
+               FontSize="Large"/>
+
+        </StackLayout>
+
+
+        
+
+
+    </StackLayout>
+
+
+
 </ContentPage>

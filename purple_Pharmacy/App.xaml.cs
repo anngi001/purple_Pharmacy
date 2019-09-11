@@ -13,7 +13,7 @@ namespace purple_Pharmacy
         {
             InitializeComponent();
 
-            MainPage =new NavigationPage (new DomicilesPage());
+            MainPage =new NavigationPage (new LoginPage());
         }
 
         protected override void OnStart()

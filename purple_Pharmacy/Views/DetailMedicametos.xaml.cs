@@ -1,4 +1,5 @@
-﻿using System;
+﻿using product.Domain;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,9 +13,15 @@ namespace purple_Pharmacy.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class DetailMedicametos : ContentPage
     {
-        public DetailMedicametos()
+        public DetailMedicametos(Product product)
         {
             InitializeComponent();
+            LoadData(product);
+        }
+
+        private void LoadData(Product contact)
+        {
+            Datos.BindingContext = contact;
         }
     }
 }

@@ -5,11 +5,17 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="purple_Pharmacy.Views.Medicamentos">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+    
+    <ListView x:Name="lsContact" ItemSelected="Contact_selected">
+        
+        <ListView.ItemTemplate>
+
+            <DataTemplate>
+
+                <ImageCell Text="{Binding FullName}" Detail="{Binding Codigo}" ImageSource="{Binding ImageUrl}"/>
+
+            </DataTemplate>
+
+        </ListView.ItemTemplate>
+    </ListView>
 </ContentPage>

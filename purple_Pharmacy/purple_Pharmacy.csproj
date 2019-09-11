@@ -19,6 +19,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\product.Domain\product.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="Models\Master.xaml.cs">
       <DependentUpon>Master.xaml</DependentUpon>
     </Compile>
