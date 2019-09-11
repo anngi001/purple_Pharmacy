@@ -16,12 +16,21 @@ namespace purple_Pharmacy.Views
         public DetailMedicametos(Product product)
         {
             InitializeComponent();
+            btcomprar.Clicked += Btcomprar_Clicked;
+
+
             LoadData(product);
+            
         }
 
         private void LoadData(Product contact)
         {
             Datos.BindingContext = contact;
+        }
+        private void Btcomprar_Clicked(object sender, EventArgs e)
+        {
+           
+            Navigation.PushAsync(new OrdersPage());
         }
     }
 }

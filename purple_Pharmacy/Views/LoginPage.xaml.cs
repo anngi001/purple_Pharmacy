@@ -18,6 +18,7 @@ namespace purple_Pharmacy.Views
         {
             InitializeComponent();
             btLogin.Clicked += BtLogin_Clicked;
+            
         }
 
         private void BtLogin_Clicked(object sender, EventArgs e)
