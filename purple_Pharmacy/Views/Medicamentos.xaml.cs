@@ -25,10 +25,10 @@ namespace purple_Pharmacy.Views
             var contactclist = new List<Product>
             {
 
-                new Product { FullName = "Acetaminofen", NombreCientifico ="Paracetamol", Precio ="10.2356.147", Codigo ="7485961235",  ImageUrl ="login.png"},
-                new Product { FullName = "Ibuprofeno", NombreCientifico ="Advil", Precio ="12.365", Codigo ="M01AE01", ImageUrl ="login.png"},
-                new Product { FullName = "Vaporub", NombreCientifico ="Plectranthus ", Precio ="4.123", Codigo ="452269", ImageUrl ="login.png"},
-                new Product { FullName = "nospirin", NombreCientifico ="no lo enocntre", Precio ="89.125", Codigo ="42645315", ImageUrl ="login.png"}
+                new Product { FullName = "Acetaminofen", NombreCientifico ="Paracetamol", Precio ="10.2356.147", Codigo ="7485961235",  ImageUrl ="LoginMain.png"},
+                new Product { FullName = "Ibuprofeno", NombreCientifico ="Advil", Precio ="12.365", Codigo ="M01AE01", ImageUrl ="LoginMain.png"},
+                new Product { FullName = "Vaporub", NombreCientifico ="Plectranthus ", Precio ="4.123", Codigo ="452269", ImageUrl ="LoginMain.png"},
+                new Product { FullName = "nospirin", NombreCientifico ="no lo enocntre", Precio ="89.125", Codigo ="42645315", ImageUrl ="LoginMain.png"}
 
             };
 
