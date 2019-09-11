@@ -10,12 +10,12 @@
 
     <StackLayout Orientation="Vertical" Margin="10" Spacing="10" x:Name="Datos">
         <Image Source="{Binding ImageUrl}" WidthRequest="250"/>
+        
         <Label Text="{Binding FullName}" 
                HorizontalOptions="Center"
                FontAttributes="Bold"
                FontSize="Large"/>
-
-        
+     
 
 
         <StackLayout Orientation="Horizontal" BackgroundColor="LightGray" HorizontalOptions="FillAndExpand">
@@ -47,6 +47,9 @@
                FontAttributes="Bold"
                FontSize="Large"/>
 
+
+
+
         </StackLayout>
 
 
@@ -66,7 +69,24 @@
         </StackLayout>
 
 
-        
+        <StackLayout Orientation="Horizontal" BackgroundColor="LightGray" HorizontalOptions="FillAndExpand">
+
+            <Button Text="Adquirir" 
+               HorizontalOptions="StartAndExpand"
+               FontAttributes="Bold"
+               
+               FontSize="Large"/>
+
+
+            <Image Source="{Binding ImageUrl2}" WidthRequest="50"/>
+
+
+
+
+        </StackLayout>
+
+
+
 
 
     </StackLayout>

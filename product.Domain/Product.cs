@@ -6,7 +6,8 @@ namespace product.Domain
     {
 
         
-        public string FullName { get; set; }
+        public string FullName { get; set; }     
+
 
         public string NombreGenerico { get; set; }
 
@@ -15,6 +16,6 @@ namespace product.Domain
         public string Precio { get; set; }
 
         public string ImageUrl { get; set; }
-
+        public string ImageUrl2 { get; set; }
     }
 }

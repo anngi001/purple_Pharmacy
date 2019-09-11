@@ -13,6 +13,7 @@
             <DataTemplate>
 
                 <ImageCell Text="{Binding FullName}" Detail="{Binding Codigo}" ImageSource="{Binding ImageUrl}"/>
+                
 
             </DataTemplate>
 
