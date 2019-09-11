@@ -20,6 +20,7 @@ namespace purple_Pharmacy.Views
             btLogin.Clicked += BtLogin_Clicked;
             
         }
+       
 
         private void BtLogin_Clicked(object sender, EventArgs e)
         {
