@@ -4,7 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             Title="Domicilios"
+             Title="Inicio"
              x:Class="purple_Pharmacy.Views.DomicilesPage">
     
     <MasterDetailPage.Master>
@@ -14,7 +14,7 @@
                 x:Name="ListMenu" ItemSelected="ListMenu_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <TextCell Text="{Binding MenuTitle}" Detail="{Binding MenuDetail}"></TextCell>
+                        <TextCell Text="{Binding MenuTitle}" TextColor="Navy" Height="80" ></TextCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>

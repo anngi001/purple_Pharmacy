@@ -71,14 +71,14 @@
 
         <StackLayout Orientation="Horizontal" BackgroundColor="LightGray" HorizontalOptions="FillAndExpand">
 
-            <Button Text="Adquirir" 
+            <Button Text="Comprar" Command="{Binding Comprar} "
                HorizontalOptions="StartAndExpand"
                FontAttributes="Bold"
-               
+               x:Name="btcomprar"
                FontSize="Large"/>
 
 
-            <Image Source="{Binding ImageUrl2}" WidthRequest="50"/>
+            <Image Source="compras.png" WidthRequest="50"/>
 
 
 

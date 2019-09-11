@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using purple_Pharmacy.Views;
+using product.Domain;
 
 namespace purple_Pharmacy.Views
 {
@@ -19,8 +21,9 @@ namespace purple_Pharmacy.Views
             
             List<Menu> menu = new List <Menu>
             {
-                new Menu { MenuTitle = "Medicamentos", MenuDetail = "Regresa a la pagina principal" },
-                new Menu {MenuTitle = "Mis Pedidos", MenuDetail = "Navegar a la pagina principal" },
+                new Menu { MenuTitle = "Medicamentos" },
+                new Menu {MenuTitle = "Mis Pedidos" },
+                new Menu {MenuTitle = "Domicilio" },
             };
             ListMenu.ItemsSource = menu;
             Detail = new NavigationPage(new OrdersPage());
@@ -41,8 +44,13 @@ namespace purple_Pharmacy.Views
                     IsPresented = false;
                     Detail = new NavigationPage(new OrdersPage());
                 }
-                
-               
+                else if (menu.MenuTitle.Equals("Domicilio"))
+                {
+                    IsPresented = false;
+                    Detail = new NavigationPage(new DomicilioPage());
+                }
+
+
             }
         }
     }
