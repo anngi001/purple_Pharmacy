@@ -18,22 +18,22 @@
         
 
 
-        <StackLayout Orientation="Horizontal" BackgroundColor="Red" HorizontalOptions="FillAndExpand">
+        <StackLayout Orientation="Horizontal" BackgroundColor="LightGray" HorizontalOptions="FillAndExpand">
 
-            <Label Text="NombreCientifico" 
+            <Label Text="Nombre Generico" 
                HorizontalOptions="StartAndExpand"
                FontAttributes="Bold"
                FontSize="Large"/>
 
 
-            <Label Text="{Binding NombreCientifico}" 
+            <Label Text="{Binding NombreGenerico}" 
                VerticalOptions="Center"
                FontAttributes="Bold"
                FontSize="Large"/>
 
         </StackLayout>
 
-        <StackLayout Orientation="Horizontal" BackgroundColor="Red" HorizontalOptions="FillAndExpand">
+        <StackLayout Orientation="Horizontal" BackgroundColor="LightGray" HorizontalOptions="FillAndExpand">
 
 
             <Label Text="Codigo" 
@@ -50,7 +50,7 @@
         </StackLayout>
 
 
-        <StackLayout Orientation="Horizontal" BackgroundColor="Red" HorizontalOptions="FillAndExpand">
+        <StackLayout Orientation="Horizontal" BackgroundColor="LightGray" HorizontalOptions="FillAndExpand">
 
             <Label Text="Precio" 
                HorizontalOptions="StartAndExpand"

@@ -8,7 +8,7 @@ namespace product.Domain
         
         public string FullName { get; set; }
 
-        public string NombreCientifico { get; set; }
+        public string NombreGenerico { get; set; }
 
         public string Codigo { get; set; }
 
