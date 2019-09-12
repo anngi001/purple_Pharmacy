@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "purple_Pharmacy.iOS", "purp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "purple_Pharmacy", "purple_Pharmacy\purple_Pharmacy.csproj", "{FCFE0526-E02D-49E4-A07A-0827CC0E5BB6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "product.Domain", "product.Domain\product.Domain.csproj", "{CF8E123E-2608-48C5-A7AD-7F938B6DA7B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "product.Domain", "product.Domain\product.Domain.csproj", "{CF8E123E-2608-48C5-A7AD-7F938B6DA7B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
