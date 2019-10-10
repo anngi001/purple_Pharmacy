@@ -12,7 +12,7 @@
 
             <DataTemplate>
 
-                <ImageCell Text="{Binding FullName}" Detail="{Binding Codigo}" ImageSource="{Binding ImageUrl}" TextColor="Navy"/>
+                <ImageCell Text="{Binding nombre}" Detail="{Binding precio}" ImageSource="{Binding ImageUrl}" TextColor="Navy"/>
                 
 
             </DataTemplate>

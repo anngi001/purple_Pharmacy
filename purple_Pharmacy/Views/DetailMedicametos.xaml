@@ -11,7 +11,7 @@
     <StackLayout Orientation="Vertical" Margin="10" Spacing="10" x:Name="Datos">
         <Image Source="{Binding ImageUrl}" WidthRequest="250"/>
         
-        <Label Text="{Binding FullName}" 
+        <Label Text="{Binding nombre}" 
                HorizontalOptions="Center"
                FontAttributes="Bold"
                FontSize="Large"/>
@@ -26,7 +26,7 @@
                FontSize="Large"/>
 
 
-            <Label Text="{Binding NombreGenerico}" 
+            <Label Text="{Binding nombre}" 
                VerticalOptions="Center"
                FontAttributes="Bold"
                FontSize="Large"/>
@@ -42,7 +42,7 @@
                FontSize="Large"/>
 
 
-            <Label Text="{Binding Codigo}" 
+            <Label Text="{Binding id}" 
                VerticalOptions="Center"
                FontAttributes="Bold"
                FontSize="Large"/>
@@ -61,7 +61,7 @@
                FontSize="Large"/>
 
 
-            <Label Text="{Binding Precio}" 
+            <Label Text="{Binding precio}" 
                VerticalOptions="Center"
                FontAttributes="Bold"
                FontSize="Large"/>

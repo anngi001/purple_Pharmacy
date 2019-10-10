@@ -6,16 +6,19 @@ namespace product.Domain
     {
 
         
-        public string FullName { get; set; }     
+        public string _id { get; set; }     
 
 
-        public string NombreGenerico { get; set; }
+        public string id { get; set; }
 
-        public string Codigo { get; set; }
+        public string nombre { get; set; }
 
-        public string Precio { get; set; }
+        public string farmacia { get; set; }
 
-        public string ImageUrl { get; set; }
-        public string ImageUrl2 { get; set; }
+        public int cantidad { get; set; }
+
+        public string descripcion { get; set; }
+
+        public double precio { get; set; }
     }
 }
