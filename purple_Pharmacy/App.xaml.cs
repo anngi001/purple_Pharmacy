@@ -1,7 +1,5 @@
-﻿using System;
+﻿using purple_Pharmacy.Views;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-using purple_Pharmacy.Views;
 
 namespace purple_Pharmacy
 {
@@ -13,7 +11,7 @@ namespace purple_Pharmacy
         {
             InitializeComponent();
 
-            MainPage =new NavigationPage (new LoginPage());
+            MainPage = new NavigationPage(new LoginPage());
         }
 
         protected override void OnStart()
