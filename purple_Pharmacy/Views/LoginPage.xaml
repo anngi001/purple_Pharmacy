@@ -4,8 +4,9 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             NavigationPage.HasNavigationBar="false"
-             x:Class="purple_Pharmacy.Views.LoginPage">
+             NavigationPage.HasNavigationBar="false"  
+             x:Class="purple_Pharmacy.Views.LoginPage"
+             xmlns:tdr="clr-namespace:purple_Pharmacy.Helpers">
     <ContentPage.Content>
         <Grid>
             <Image Source="pharmacy" Aspect="AspectFill"/>
@@ -17,7 +18,7 @@
 
                 <Entry x:Name="UserEntry" 
                         WidthRequest="300" 
-                        Placeholder="Email" 
+                        Placeholder="{tdr:Translate Correo}" 
                         PlaceholderColor="#4834d4"
                         FontAttributes="Bold"
                         HorizontalOptions="Center"
@@ -27,12 +28,12 @@
                         TextColor="#4834d4" 
                         WidthRequest="300" 
                         FontAttributes="Bold"
-                        Placeholder="Contraseña" 
+                        Placeholder="{tdr:Translate Contraseña}" 
                         PlaceholderColor="#4834d4"
                         HorizontalOptions="Center"
                         IsPassword="True"/>
 
-                <Button Text="Ingresar" 
+                <Button Text="{tdr:Translate Ingresar}" 
                         HorizontalOptions="CenterAndExpand" 
                         BackgroundColor="#4834d4" 
                         TextColor="White"

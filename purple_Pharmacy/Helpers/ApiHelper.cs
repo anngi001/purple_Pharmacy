@@ -11,7 +11,7 @@ namespace CinemaLM.Helpers
         public static T Get<T>(string url)
         {
             HttpClient client = new HttpClient();
-            client.BaseAddress = new Uri("https://misapis.azurewebsites.net");
+            client.BaseAddress = new Uri("https://api-taller.herokuapp.com/");
 
             var request = client.GetAsync(url).Result;
             if (request.IsSuccessStatusCode)

@@ -4,7 +4,8 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="purple_Pharmacy.Views.Welcome">
+             x:Class="purple_Pharmacy.Views.Welcome"
+             xmlns:tdr="clr-namespace:purple_Pharmacy.Helpers">
     <ContentPage.Content>
         <StackLayout Padding="5">
             <ActivityIndicator
@@ -12,7 +13,7 @@
                     VerticalOptions="Center">
             </ActivityIndicator>
             <Image Source="avatar.png" WidthRequest="200"></Image>
-                <Label Text="Bienvenido" FontSize="Title" HorizontalOptions="Center" TextColor="Navy"  HeightRequest="80" ></Label>
+                <Label Text="{tdr:Translate Bienvenido}" FontSize="Title" HorizontalOptions="Center" TextColor="Navy"  HeightRequest="80" ></Label>
             </StackLayout>
     </ContentPage.Content>
 </ContentPage>

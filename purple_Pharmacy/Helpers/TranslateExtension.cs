@@ -7,12 +7,12 @@ using System.Text;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace CinemaLM.Helpers
+namespace purple_Pharmacy.Helpers
 {
     [ContentProperty("Text")]
     public class TranslateExtension : IMarkupExtension
     {
-        const string ResourcesId = "CinemaLM.Resources.AppResources";
+        const string ResourcesId = "purple_Pharmacy.Resources.AppResources";
 
         public static readonly Lazy<ResourceManager> resourceManager = new Lazy<ResourceManager>(() => new ResourceManager(ResourcesId, typeof(TranslateExtension).GetTypeInfo().Assembly));
 
