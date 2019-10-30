@@ -4,7 +4,8 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="purple_Pharmacy.Views.DetailMedicametos">
+             x:Class="purple_Pharmacy.Views.DetailMedicametos"
+             xmlns:tdr="clr-namespace:purple_Pharmacy.Helpers">
 
     <StackLayout Orientation="Vertical" Margin="10" Spacing="10" x:Name="Datos">
         <Grid x:Name="compraGrid">
@@ -18,10 +19,10 @@
                 <StackLayout Padding="30,30,30,30" VerticalOptions="Center" Grid.Row="0">
                     <StackLayout Padding="20,20,20,20" Spacing="30" Orientation="Horizontal" BackgroundColor="#f5f6fa">
                         <StackLayout >
-                            <Label Text="Medicamento" TextColor="#d63031" FontAttributes="Bold" FontSize="14"/>
-                            <Label Text="Codigo" TextColor="Black" FontSize="14"/>
-                            <Label Text="Precio" TextColor="Black" FontSize="14"/>
-                            <Label Text="Cantidad a comprar" TextColor="Black" FontSize="14"/>
+                            <Label Text="{tdr:Translate Medicamento}" TextColor="#d63031" FontAttributes="Bold" FontSize="14"/>
+                            <Label Text="{tdr:Translate Codigo}" TextColor="Black" FontSize="14"/>
+                            <Label Text="{tdr:Translate Precio}" TextColor="Black" FontSize="14"/>
+                            <Label Text="{tdr:Translate Cantidad a comprar}" TextColor="Black" FontSize="14"/>
 
                         </StackLayout>
 
@@ -45,7 +46,7 @@
                     <Button HorizontalOptions="Center" 
                             HeightRequest="40" 
                             WidthRequest="250"
-                            Text="Comprar"
+                            Text="{tdr:Translate Comprar}"
                             BackgroundColor="#d63031"
                             Margin="0,20"
                             TextColor="#f5f6fa"
