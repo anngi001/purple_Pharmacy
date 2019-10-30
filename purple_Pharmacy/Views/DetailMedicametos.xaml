@@ -6,91 +6,55 @@
              mc:Ignorable="d"
              x:Class="purple_Pharmacy.Views.DetailMedicametos">
 
-
-
     <StackLayout Orientation="Vertical" Margin="10" Spacing="10" x:Name="Datos">
-        <Image Source="{Binding imagen}" WidthRequest="250"/>
-        
-        <Label Text="{Binding nombre}" 
-               HorizontalOptions="Center"
-               FontAttributes="Bold"
-               FontSize="Large"/>
-     
+        <Grid x:Name="compraGrid">
+            <Image Source="{Binding imagen}" Aspect="AspectFill"/>
+            <BoxView BackgroundColor="Black" Opacity="0.7"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
 
+                <StackLayout Padding="30,30,30,30" VerticalOptions="Center" Grid.Row="0">
+                    <StackLayout Padding="20,20,20,20" Spacing="30" Orientation="Horizontal" BackgroundColor="#f5f6fa">
+                        <StackLayout >
+                            <Label Text="Medicamento" TextColor="#d63031" FontAttributes="Bold" FontSize="14"/>
+                            <Label Text="Codigo" TextColor="Black" FontSize="14"/>
+                            <Label Text="Precio" TextColor="Black" FontSize="14"/>
+                            <Label Text="Cantidad a comprar" TextColor="Black" FontSize="14"/>
 
-        <StackLayout Orientation="Horizontal" BackgroundColor="LightGray" HorizontalOptions="FillAndExpand">
+                        </StackLayout>
 
-            <Label Text="Nombre Generico" 
-               HorizontalOptions="StartAndExpand"
-               FontAttributes="Bold"
-               FontSize="Large"/>
+                        <StackLayout>
+                            <StackLayout x:Name="peliculaLayout">
+                                <Label Text="{Binding nombre}"/>
+                                <Label Text="{Binding id}"/>
+                                <Label Text="{Binding Precio, StringFormat='{0:C}'}"/>
+                                
+                                <Entry x:Name="CantidadEntry"
+                                Placeholder="No" 
+                                PlaceholderColor="Black"
+                                Opacity="0.5"
+                                HorizontalOptions="Center"
+                                TextColor="#4834d4"/>
+                            </StackLayout>
+                        </StackLayout>
 
+                    </StackLayout>
 
-            <Label Text="{Binding nombre}" 
-               VerticalOptions="Center"
-               FontAttributes="Bold"
-               FontSize="Large"/>
+                    <Button HorizontalOptions="Center" 
+                            HeightRequest="40" 
+                            WidthRequest="250"
+                            Text="Comprar"
+                            BackgroundColor="#d63031"
+                            Margin="0,20"
+                            TextColor="#f5f6fa"
+                            CornerRadius="17"
+                            Clicked="Button_Clicked"
+                            />
 
-        </StackLayout>
-
-        <StackLayout Orientation="Horizontal" BackgroundColor="LightGray" HorizontalOptions="FillAndExpand">
-
-
-            <Label Text="Codigo" 
-            HorizontalOptions="StartAndExpand"
-               FontAttributes="Bold"
-               FontSize="Large"/>
-
-
-            <Label Text="{Binding id}" 
-               VerticalOptions="Center"
-               FontAttributes="Bold"
-               FontSize="Large"/>
-
-
-
-
-        </StackLayout>
-
-
-        <StackLayout Orientation="Horizontal" BackgroundColor="LightGray" HorizontalOptions="FillAndExpand">
-
-            <Label Text="Precio" 
-               HorizontalOptions="StartAndExpand"
-               FontAttributes="Bold"
-               FontSize="Large"/>
-
-
-            <Label Text="{Binding precio}" 
-               VerticalOptions="Center"
-               FontAttributes="Bold"
-               FontSize="Large"/>
-
-        </StackLayout>
-
-
-        <StackLayout Orientation="Horizontal" BackgroundColor="LightGray" HorizontalOptions="FillAndExpand">
-
-            <Button Text="Comprar" Command="{Binding Comprar} "
-               HorizontalOptions="StartAndExpand"
-               FontAttributes="Bold"
-               x:Name="btcomprar"
-               FontSize="Large"/>
-
-
-            <Image Source="compras.png" WidthRequest="50"/>
-
-
-
-
-        </StackLayout>
-
-
-
-
-
+                </StackLayout>
+            </Grid>
+        </Grid>
     </StackLayout>
-
-
-
 </ContentPage>

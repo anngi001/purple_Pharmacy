@@ -13,37 +13,11 @@ namespace purple_Pharmacy.Views
         public LoginPage()
         {
             InitializeComponent();
-            btLogin.Clicked += BtLogin_Clicked;
         }
 
-        private async void BtLogin_Clicked(object sender, EventArgs e)
+        async private void Button_Clicked(object sender, EventArgs e)
         {
-            if (String.IsNullOrEmpty(txtUsuario.Text))
-            {
-
-                await DisplayAlert("Validacion", "Por favor digite un usuario", "ok");
-                txtUsuario.Focus();
-                return;
-
-
-            }
-
-            if (String.IsNullOrEmpty(txtPassword.Text))
-            {
-
-                await DisplayAlert("Validacion", "Por favor digite una contraseña ", "ok");
-                txtPassword.Focus();
-                return;
-
-
-            }
-            await ((NavigationPage)this.Parent).PushAsync(new DomicilesPage());
-
-
+            await((NavigationPage)this.Parent).PushAsync(new DomicilesPage());
         }
-
-
-
-
     }
 }

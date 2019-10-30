@@ -19,5 +19,9 @@ namespace purple_Pharmacy.Views
             Datos.BindingContext = contact;
         }
 
+        private void Button_Clicked(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }
