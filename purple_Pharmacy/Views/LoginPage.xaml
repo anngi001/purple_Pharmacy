@@ -30,7 +30,7 @@
                     <Label  Grid.Row="0" 
                                 Grid.Column="0" 
                                 Text="Usuario"  
-                               
+                              
                                 FontSize="Medium"
                                 VerticalOptions="Center">
                     </Label>

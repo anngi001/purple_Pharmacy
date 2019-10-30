@@ -9,7 +9,7 @@
 
 
     <StackLayout Orientation="Vertical" Margin="10" Spacing="10" x:Name="Datos">
-        <Image Source="{Binding ImageUrl}" WidthRequest="250"/>
+        <Image Source="{Binding imagen}" WidthRequest="250"/>
         
         <Label Text="{Binding nombre}" 
                HorizontalOptions="Center"
