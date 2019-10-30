@@ -1,7 +1,8 @@
 ﻿
 using System.Collections.Generic;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+using Xamarin.Forms.Xaml; 
+using purple_Pharmacy.Resources;
 
 namespace purple_Pharmacy.Views
 {
@@ -19,9 +20,9 @@ namespace purple_Pharmacy.Views
 
             List<Menu> menu = new List<Menu>
             {
-                new Menu { MenuTitle = "Medicamentos" },
-                new Menu {MenuTitle = "Mis Pedidos" },
-                new Menu {MenuTitle = "Domicilio" },
+                new Menu { MenuTitle = AppResources.Medicamento },
+                new Menu {MenuTitle = AppResources.Mis_Pedidos },
+                new Menu {MenuTitle = AppResources.Domicilio },
             };
             ListMenu.ItemsSource = menu;
             Detail = new NavigationPage(new Welcome());
@@ -31,18 +32,18 @@ namespace purple_Pharmacy.Views
             var menu = e.SelectedItem as Menu;
             if (menu != null)
             {
-                if (menu.MenuTitle.Equals("Medicamentos"))
+                if (menu.MenuTitle.Equals(AppResources.Medicamento))
                 {
                     IsPresented = false;
                     Detail = new NavigationPage(new Medicamentos());
 
                 }
-                else if (menu.MenuTitle.Equals("Mis Pedidos"))
+                else if (menu.MenuTitle.Equals(AppResources.Mis_Pedidos))
                 {
                     IsPresented = false;
                     Detail = new NavigationPage(new OrdersPage());
                 }
-                else if (menu.MenuTitle.Equals("Domicilio"))
+                else if (menu.MenuTitle.Equals(AppResources.Domicilio))
                 {
                     IsPresented = false;
                     Detail = new NavigationPage(new DomicilioPage());
