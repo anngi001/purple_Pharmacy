@@ -1,8 +1,7 @@
 ﻿
 using System.Collections.Generic;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml; 
-using purple_Pharmacy.Resources;
+using Xamarin.Forms.Xaml;
 
 namespace purple_Pharmacy.Views
 {
@@ -20,9 +19,9 @@ namespace purple_Pharmacy.Views
 
             List<Menu> menu = new List<Menu>
             {
-                new Menu { MenuTitle = AppResources.Medicamento },
-                new Menu {MenuTitle = AppResources.Mis_Pedidos },
-                new Menu {MenuTitle = AppResources.Domicilio },
+                new Menu { MenuTitle = "Medicamentos" },
+                new Menu {MenuTitle = "Mis Pedidos" },
+                new Menu {MenuTitle = "Cerrar Sesion" },
             };
             ListMenu.ItemsSource = menu;
             Detail = new NavigationPage(new Welcome());
@@ -32,21 +31,21 @@ namespace purple_Pharmacy.Views
             var menu = e.SelectedItem as Menu;
             if (menu != null)
             {
-                if (menu.MenuTitle.Equals(AppResources.Medicamento))
+                if (menu.MenuTitle.Equals("Medicamentos"))
                 {
                     IsPresented = false;
                     Detail = new NavigationPage(new Medicamentos());
 
                 }
-                else if (menu.MenuTitle.Equals(AppResources.Mis_Pedidos))
+                else if (menu.MenuTitle.Equals("Mis Pedidos"))
                 {
                     IsPresented = false;
                     Detail = new NavigationPage(new OrdersPage());
                 }
-                else if (menu.MenuTitle.Equals(AppResources.Domicilio))
+                else if (menu.MenuTitle.Equals("Cerrar Sesion"))
                 {
                     IsPresented = false;
-                    Detail = new NavigationPage(new DomicilioPage());
+                    Detail = new NavigationPage(new LoginPage());
                 }
 
 
