@@ -22,7 +22,7 @@ namespace purple_Pharmacy.Views
             {
                 new Menu { MenuTitle = "Medicamentos" },
                 new Menu {MenuTitle = "Mis Pedidos" },
-                new Menu {MenuTitle = "Domicilio" },
+                new Menu {MenuTitle = "Cerrar Sesion" },
             };
             ListMenu.ItemsSource = menu;
             Detail = new NavigationPage(new Welcome());
@@ -43,7 +43,7 @@ namespace purple_Pharmacy.Views
                     IsPresented = false;
                     Detail = new NavigationPage(new OrdersPage());
                 }
-                else if (menu.MenuTitle.Equals("Domicilio"))
+                else if (menu.MenuTitle.Equals("Cerrar Sesion"))
                 {
                     IsPresented = false;
                     Detail = new NavigationPage(new LoginPage());
